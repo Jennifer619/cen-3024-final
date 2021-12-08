@@ -80,4 +80,13 @@ public class TextAnalyzer {
 		});
 		return list;
 	}
+	public int countThe(File file) {
+		int count = 0;
+		for(int i = 0; i < file.length(); i++) {
+			if(((CharSequence) file).charAt(i) == 't' && ((CharSequence) file).charAt(i) == 'h' && ((CharSequence) file).charAt(i) == 'e') {
+				count++;
+			}
+		}
+		return count;
+	}
 }
